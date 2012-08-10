@@ -1,0 +1,11 @@
+{
+  "name": "progress-component",
+  "description": "Progress indicator component",
+  "version": "0.0.1",
+  "keywords": ["ui", "progress", "component"],
+  "component": {
+    "scripts": {
+      "progress": "index.js"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "progress",
+  "description": "Progress indicator component",
+  "version": "0.0.1",
+  "keywords": ["progress", "loading", "ui"],
+  "scripts": ["index.js"]
+}
