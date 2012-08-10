@@ -32,9 +32,13 @@ var id = setInterval(function(){
 
   Update the indicator to `n` and re-draw.
 
-### Progress#font(str)
+### Progress#font(family)
 
-  Change the font to `str`.
+  Change the font to `family`.
+
+### Progress#fontSize(n)
+
+  Change the font size to `n`.
 
 ### Progress#size(n)
 
