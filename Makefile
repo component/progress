@@ -1,8 +1,11 @@
 
-test/out.js: index.js
-	component build package.json test/out
+build: index.js components
+	@component build
+
+components:
+	@component install
 
 clean:
-	rm -f test/out.{js,css}
+	rm -fr build components
 
 .PHONY: clean
