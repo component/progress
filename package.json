@@ -4,6 +4,8 @@
   "version": "0.0.2",
   "keywords": ["progress", "loading", "ui"],
   "component": {
-    "progress/index.js": "index.js"
+    "scripts": {
+      "progress/index.js": "index.js"
+    }
   }
 }
