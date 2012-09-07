@@ -11,6 +11,8 @@ module.exports = Progress;
 
 function Progress() {
   this.percent = 0;
+  this.el = document.createElement('canvas');
+  this.ctx = this.el.getContext('2d');
   this.size(50);
   this.fontSize(11);
   this.font('helvetica, arial, sans-serif');
@@ -25,7 +27,8 @@ function Progress() {
  */
 
 Progress.prototype.size = function(n){
-  this._size = n;
+  this.el.width = n;
+  this.el.height = n;
   return this;
 };
 
@@ -92,7 +95,7 @@ Progress.prototype.update = function(n){
 
 Progress.prototype.draw = function(ctx){
   var percent = Math.min(this.percent, 100)
-    , size = this._size
+    , size = this.el.width
     , half = size / 2
     , x = half
     , y = half
@@ -126,21 +129,5 @@ Progress.prototype.draw = function(ctx){
     , y + fontSize / 2 - 1);
 
   return this;
-};
-
-/**
- * Render and return a `Canvas`.
- *
- * @return {Canvas}
- * @api public
- */
-
-Progress.prototype.render = function(){
-  this.el = document.createElement('canvas');
-  this.el.width = this._size;
-  this.el.height = this._size;
-  this.ctx = this.el.getContext('2d');
-  this.draw(this.ctx);
-  return this.el;
 };
 
