@@ -17,7 +17,7 @@ $ npm install progress-component
 var Progress = require('progress');
 
 var progress = new Progress;
-document.body.appendChild(progress.render());
+document.body.appendChild(progress.el);
 
 var n = 0;
 var id = setInterval(function(){
