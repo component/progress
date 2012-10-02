@@ -95,7 +95,8 @@ Progress.prototype.update = function(n){
 
 Progress.prototype.draw = function(ctx){
   var percent = Math.min(this.percent, 100)
-    , size = this.el.width
+    , ratio = window.devicePixelRatio || 1
+    , size = this.el.width / ratio
     , half = size / 2
     , x = half
     , y = half
