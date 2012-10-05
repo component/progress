@@ -1,5 +1,11 @@
 
 /**
+ * Module dependencies.
+ */
+
+var autoscale = require('autoscale-canvas');
+
+/**
  * Expose `Progress`.
  */
 
@@ -29,6 +35,7 @@ function Progress() {
 Progress.prototype.size = function(n){
   this.el.width = n;
   this.el.height = n;
+  autoscale(this.el);
   return this;
 };
 

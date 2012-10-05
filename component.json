@@ -3,5 +3,8 @@
   "description": "Progress indicator component",
   "version": "0.0.3",
   "keywords": ["progress", "loading", "ui"],
-  "scripts": ["index.js"]
+  "scripts": ["index.js"],
+  "dependencies": {
+    "component/autoscale-canvas": "*"
+  }
 }
