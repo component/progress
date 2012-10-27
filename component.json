@@ -2,9 +2,16 @@
   "name": "progress",
   "description": "Progress indicator component",
   "version": "0.0.4",
-  "keywords": ["progress", "loading", "ui"],
-  "scripts": ["index.js"],
+  "keywords": [
+    "progress",
+    "loading",
+    "ui"
+  ],
+  "scripts": [
+    "index.js"
+  ],
   "dependencies": {
     "component/autoscale-canvas": "*"
-  }
+  },
+  "license": "MIT"
 }
