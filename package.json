@@ -2,7 +2,11 @@
   "name": "progress-component",
   "description": "Progress indicator component",
   "version": "0.0.4",
-  "keywords": ["progress", "loading", "ui"],
+  "keywords": [
+    "progress",
+    "loading",
+    "ui"
+  ],
   "dependencies": {
     "autoscale-canvas": "*"
   },
@@ -10,5 +14,9 @@
     "scripts": {
       "progress/index.js": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/progress.git"
   }
 }
